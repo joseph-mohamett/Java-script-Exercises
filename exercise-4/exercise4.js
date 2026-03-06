@@ -3,6 +3,8 @@ function add(a,b){
 }
 console.log(add(22,66));
 result = add (20,60);
+result = add (50,10);
+result = add (30,77);
 console.log(result);
 
 const sub= function (x,y){
