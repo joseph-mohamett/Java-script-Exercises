@@ -13,12 +13,6 @@ function getUserInfo(){
     })
 }
 
-// getUserInfo()
-// .then((info)=>{
-//     console.log("successfully",info)
-// })
-// .catch((error)=> console.log(error))
-
 async function loadUserData() {
     try{
         const getUser = await getUserInfo ()
