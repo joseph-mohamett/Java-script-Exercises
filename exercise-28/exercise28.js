@@ -1,4 +1,4 @@
-// exercise-27
+// exercise-28
 
 function getUserInfo(){
     return new Promise((success,failure)=>{

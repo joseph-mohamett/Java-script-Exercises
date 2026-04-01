@@ -1,0 +1,42 @@
+{
+    "id": 110,
+    "name": "joseph",
+    "city": "hargeisa",
+    "Purchases": [
+        {
+            "id": 121,
+            "name": "mohamett",
+            "city": "mogadishu",
+            "product": "laptop",
+            "quantity": 10
+        },
+        {
+            "id": 122,
+            "name": "abdi",
+            "city": "baidao",
+            "product": "desktop",
+            "quantity": 17
+        },
+        {
+            "id": 122,
+            "name": "hodan",
+            "city": "jowhar",
+            "product": "tablet",
+            "quantity": 21
+        },
+        {
+            "id": 123,
+            "name": "farah",
+            "city": "mogadishu",
+            "product": "mouse",
+            "quantity": 29
+        },
+        {
+            "id": 124,
+            "name": "salmo",
+            "city": "garowe",
+            "product": "keyboard",
+            "quantity": 38
+        }
+    ]
+}
