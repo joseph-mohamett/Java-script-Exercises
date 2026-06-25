@@ -1,0 +1,147 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #614949;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem;
+}
+.brand-title{
+    font-size: 1.5em;
+    line-height: 60px;
+}
+.navbar-links{
+    height: 100%;
+}
+.navbar-links ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.navbar-links li{
+    padding: 0 10px;
+}
+.navbar-links a{
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    line-height: 60px;
+    display: block;
+}
+.navbar-links a:hover{
+    background-color: #a38585;
+}
+.menu-toggle{
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+.menu-toggle .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px){
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .menu-toggle{
+        display: flex;
+    }
+    .navbar-links{
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+    }
+    .navbar-links ul{
+        flex-direction: column;
+        width: 100%;
+    }
+    .navbar-links li{
+        text-align: center;
+    }
+    .navbar-links a{
+        padding: 10px;
+        line-height: 20px;
+    }
+    .navbar.online .navbar-links{
+        max-height: 300px;
+        opacity: 1;
+        transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    }
+    .navbar.online .menu-toggle .bar:nth-child(2){
+        opacity: 0;
+    }
+    .navbar.online .menu-toggle .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .navbar.online .menu-toggle .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+.container{
+    height: 100vh;
+    padding-top: 60px;
+}
+h2{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: #fff;
+}
+#Home{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: cyan;
+}
+#About{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: orange;
+}
+#Services{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: green;
+}
+#Blogs{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: tomato;
+}
+#Contact{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: aquamarine;
+}
